@@ -38,7 +38,7 @@ public class Main {
 
         for(int i = 0; i < n; i++){
             q = del.get(new Pair(q, text.charAt(i)));
-            if(q == Patternlen) System.out.println("Wzorzec wystepuje z przesunieciem " +(i-Patternlen+1));
+            if(q == Patternlen) System.out.println(" " +text.codePointCount(0,i-Patternlen+1));
         }
     }
 
@@ -76,7 +76,7 @@ public class Main {
             if(Pattern.charAt(q) == text.charAt(i)) q++;
 
             if(q == m) {
-                System.out.println("Wzorzec wystepuje z przesunieciem " + (i - m + 1));
+                System.out.println(" " + text.codePointCount(0, i - m + 1));
                 q = pi.get(q);
                 }
             }
