@@ -1,0 +1,6 @@
+   Blad: za mala liczba argumentow
+       Błąd: za mała liczba operatorów
+  = 10
+
+  = 10
+
